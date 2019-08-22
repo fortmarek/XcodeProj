@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "XcodeProj",
+    name: "TuistXcodeProj",
     products: [
         .library(name: "TuistXcodeProj", targets: ["XcodeProj"]),
     ],
@@ -13,11 +13,11 @@ let package = Package(
         .package(url: "https://github.com/tuist/Shell", .upToNextMinor(from: "2.0.1")),
     ],
     targets: [
-        .target(name: "XcodeProj",
+        .target(name: "TuistXcodeProj",
                 dependencies: [
                     "PathKit",
                     "AEXML",
                 ]),
-        .testTarget(name: "XcodeProjTests", dependencies: ["XcodeProj", "Shell"]),
+        .testTarget(name: "XcodeProjTests", dependencies: ["TuistXcodeProj", "Shell"]),
     ]
 )
