@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "XcodeProj",
     products: [
-        .library(name: "XcodeProj", targets: ["XcodeProj"]),
+        .library(name: "TuistXcodeProj", targets: ["XcodeProj"]),
     ],
     dependencies: [
         .package(url: "https://github.com/tadija/AEXML", .upToNextMinor(from: "4.4.0")),
